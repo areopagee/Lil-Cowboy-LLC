@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lil Cowboy LLC | Business Support Services</title>
+<meta name="description" content="Lil Cowboy LLC provides business support services: administration, customer support and operations. Call +44 7456 042671.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e5a5a'/%3E%3Cg transform='translate(4 4) scale(1)' fill='none' stroke='%23e0a93a' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 16c3 2 15 2 18 0-1-.6-2-.6-3-1.4l-.8-6C16 6.8 8 6.8 6.8 8.6L6 14.6c-1 .8-2 .8-3 1.4z'/%3E%3Cpath d='M8 13h8'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+:root{--bg:#f5f7f8;--card:#fff;--ink:#0f1f29;--mute:#51636e;--teal:#0e5a5a;--on:#fff;--brass:#b9801a;--line:#d8e1e4;--soft:#e7f0f0;--bad:#b3261e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1418;--card:#132127;--ink:#e8f0f2;--mute:#9db1b8;--teal:#4fb3b0;--on:#06191a;--brass:#e0a93a;--line:#233f47;--soft:#183037;--bad:#ff8a80}}
+:root[data-theme="dark"]{--bg:#0b1418;--card:#132127;--ink:#e8f0f2;--mute:#9db1b8;--teal:#4fb3b0;--on:#06191a;--brass:#e0a93a;--line:#233f47;--soft:#183037;--bad:#ff8a80}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Segoe UI","Trebuchet MS",Helvetica,Arial,sans-serif}
+h1,h2,h3{font-family:Georgia,"Palatino Linotype",serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.1rem,5vw,3.4rem)}h2{font-size:1.9rem}h3{font-size:1.1rem}
+p{margin:0 0 1em;max-width:64ch}
+a{color:var(--teal)}
+:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;flex-wrap:wrap;max-width:1100px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-family:Georgia,serif;font-weight:700;font-size:1.2rem}
+.mono{width:38px;height:38px;border-radius:9px;background:var(--teal);color:var(--on);display:grid;place-items:center}
+nav[role=tablist]{display:flex;gap:4px;overflow-x:auto;max-width:100%}
+.tab{background:none;border:0;color:var(--mute);font:inherit;font-weight:600;padding:9px 14px;border-radius:8px;cursor:pointer;white-space:nowrap}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected=true]{background:var(--teal);color:var(--on)}
+.theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:7px 12px;cursor:pointer;font:inherit}
+.panel{padding:44px 0 60px}
+.panel[hidden]{display:none}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:start}
+.lead{font-size:1.1rem;color:var(--mute)}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+.btn{display:inline-block;background:var(--brass);color:#fff;font:inherit;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:10px;border:0;cursor:pointer}
+:root[data-theme="dark"] .btn{color:#1b1305}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn{color:#1b1305}}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.panelcard{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--brass);border-radius:12px;padding:22px}
+.panelcard ul{margin:0;padding:0;list-style:none}
+.panelcard li{padding:9px 0;border-bottom:1px solid var(--line)}
+.panelcard li:last-child{border:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.stat b{display:block;font:700 2.2rem Georgia,serif;color:var(--teal)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;padding:7px 16px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--teal);border-color:var(--teal);color:var(--on)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:12px;padding:20px}
+.card .tag{font-size:.82rem;color:var(--brass);font-weight:700}
+.card p{color:var(--mute);margin:0 0 10px;font-size:.96rem}
+.card summary{color:var(--teal);font-weight:600;cursor:pointer}
+.card ul{margin:10px 0 0;padding-left:20px;color:var(--mute);font-size:.94rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px 16px 64px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:34px;height:34px;border-radius:50%;background:var(--teal);color:var(--on);font-weight:700;display:grid;place-items:center}
+details.faq{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}
+details.faq summary{cursor:pointer;font-weight:600}
+details.faq p{margin:8px 0 0;color:var(--mute)}
+form{display:grid;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+label{font-weight:600;font-size:.92rem}
+input,select,textarea{width:100%;font:inherit;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);margin-top:4px}
+.err{color:var(--bad);font-size:.85rem;min-height:1.1em}
+.ok{background:var(--soft);padding:12px;border-radius:8px}
+.info{display:grid;gap:12px;margin-top:18px}
+.info div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.info small{display:block;color:var(--mute)}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--mute);font-size:.9rem}
+.ico{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ib{width:46px;height:46px;border-radius:11px;background:var(--soft);color:var(--teal);display:grid;place-items:center;margin-bottom:12px}
+.feat{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.box p{color:var(--mute);margin:0;font-size:.96rem}
+.sec{margin-top:48px}
+.cta{margin-top:48px;background:var(--teal);color:var(--on);border-radius:14px;padding:30px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.cta h2{margin:0 0 4px;font-size:1.5rem}.cta p{margin:0}
+:root .cta .btn[data-go]{background:var(--on);color:var(--teal)}
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.checks li{display:flex;gap:10px;align-items:flex-start}
+.checks .ico{color:var(--teal);width:22px;height:22px;margin-top:2px}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pills span{background:var(--soft);color:var(--ink);border-radius:999px;padding:6px 14px;font-size:.93rem}
+.row{display:flex;gap:14px;align-items:center}
+.row .ib{margin:0}
+.mini{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:7px 12px;cursor:pointer;font:inherit;margin-bottom:14px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+.foot h3{font-size:1rem}.foot a,.foot button.lk{display:block;background:none;border:0;padding:3px 0;color:var(--mute);font:inherit;cursor:pointer;text-align:left;text-decoration:none}
+.foot a:hover,.foot button.lk:hover{color:var(--teal)}
+.copy{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+@media (max-width:760px){.foot{grid-template-columns:1fr}}
+@media (max-width:760px){.hero,.cols,.stats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-hat" viewBox="0 0 24 24"><path d="M3 16c3 2 15 2 18 0-1-.6-2-.6-3-1.4l-.8-6C16 6.8 8 6.8 6.8 8.6L6 14.6c-1 .8-2 .8-3 1.4z"/><path d="M8 13h8"/></symbol>
+<symbol id="i-admin" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM8.5 12h7M8.5 16h5"/></symbol>
+<symbol id="i-data" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-4 4v-4H4z"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8 4v10l-8 4-8-4V7z"/><path d="M4 7l8 4 8-4M12 11v10"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V5M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-4 3-6 6.5-6s6.5 2 6.5 6M16 5a3.5 3.5 0 0 1 0 7M18.5 14c2 .7 3 2.5 3 5"/></symbol>
+<symbol id="i-swap" viewBox="0 0 24 24"><path d="M7 7h11l-3-3M17 17H6l3 3"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></symbol>
+</defs></svg>
+<header>
+<div class="bar">
+<div class="brand"><span class="mono" aria-hidden="true"><svg class="ico" aria-hidden="true"><use href="#i-hat"/></svg></span>Lil Cowboy LLC</div>
+<nav role="tablist" aria-label="Site sections">
+<button class="tab" role="tab" id="t-home" aria-controls="home" aria-selected="true">Home</button>
+<button class="tab" role="tab" id="t-services" aria-controls="services" aria-selected="false" tabindex="-1">Services</button>
+<button class="tab" role="tab" id="t-about" aria-controls="about" aria-selected="false" tabindex="-1">About</button>
+<button class="tab" role="tab" id="t-process" aria-controls="process" aria-selected="false" tabindex="-1">How we work</button>
+<button class="tab" role="tab" id="t-faq" aria-controls="faq" aria-selected="false" tabindex="-1">FAQ</button>
+<button class="tab" role="tab" id="t-contact" aria-controls="contact" aria-selected="false" tabindex="-1">Contact</button>
+</nav>
+<button class="theme" id="themeBtn" aria-label="Switch light or dark theme">Theme</button>
+</div>
+</header>
+
+<main class="wrap">
+
+<section class="panel" id="home" role="tabpanel" aria-labelledby="t-home">
+<div class="hero">
+<div>
+<h1>Business support that keeps your work moving.</h1>
+<p class="lead">Lil Cowboy LLC takes on the administration, customer support and day-to-day coordination, so you can focus on growing your business.</p>
+<div class="btns"><button class="btn" data-go="contact">Get in touch</button><button class="btn alt" data-go="services">View services</button></div>
+</div>
+<aside class="panelcard" aria-label="Services at a glance">
+<h3>At a glance</h3>
+<ul><li>Administration and virtual assistance</li><li>Customer support outsourcing</li><li>Project and operations support</li><li>Clear written plans and regular reports</li></ul>
+</aside>
+</div>
+<div class="stats">
+<div class="stat"><b data-count="6">0</b>Core support services</div>
+<div class="stat"><b data-count="24">0</b>Hour reply target on enquiries</div>
+<div class="stat"><b data-count="1">0</b>Point of contact for your account</div>
+</div>
+
+<div class="sec"><h2>Why work with Lil Cowboy</h2>
+<div class="feat">
+<div class="box"><span class="ib"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg></span><h3>Quick replies</h3><p>We aim to answer every enquiry within one working day.</p></div>
+<div class="box"><span class="ib"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></span><h3>Careful with your data</h3><p>Documents and customer details are handled with care and kept confidential.</p></div>
+<div class="box"><span class="ib"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span><h3>One point of contact</h3><p>You deal with one person who knows your account and your priorities.</p></div>
+<div class="box"><span class="ib"><svg class="ico" aria-hidden="true"><use href="#i-swap"/></svg></span><h3>Flexible support</h3><p>Start with a single task and add more services when you are ready.</p></div>
+</div></div>
+<div class="sec"><h2>Who we support</h2>
+<div class="pills"><span>Small businesses</span><span>Start-ups</span><span>Online shops</span><span>Consultants and freelancers</span><span>Local service companies</span><span>Growing teams</span></div></div>
+<div class="cta"><div><h2>Ready to hand off the busywork?</h2><p>Tell us what you need and we will suggest a simple plan.</p></div><button class="btn" data-go="contact">Contact us</button></div>
+</section>
+
+<section class="panel" id="services" role="tabpanel" aria-labelledby="t-services" hidden>
+<h2>Services</h2>
+<p>Choose a category to filter. Every service can start small and grow with you.</p>
+<div class="chips">
+<button class="chip" aria-pressed="true" data-f="all">All</button>
+<button class="chip" aria-pressed="false" data-f="Administration">Administration</button>
+<button class="chip" aria-pressed="false" data-f="Customers">Customers</button>
+<button class="chip" aria-pressed="false" data-f="Operations">Operations</button>
+</div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section class="panel" id="about" role="tabpanel" aria-labelledby="t-about" hidden>
+<div class="cols">
+<div>
+<h2>About Lil Cowboy LLC</h2>
+<p>We are a business support company. We handle the behind-the-scenes work that every growing organisation needs, done carefully and on time.</p>
+<p>Running a business means juggling emails, paperwork, customers and deadlines. We take a share of that load, so you can spend your time on decisions and growth.</p>
+<div class="box" style="margin-top:20px"><div class="row"><span class="ib"><svg class="ico" aria-hidden="true"><use href="#i-target"/></svg></span><div><h3 style="margin:0">Our mission</h3><p>To give every business dependable support, without the cost of building a large team.</p></div></div></div>
+</div>
+<div>
+<details class="faq" open><summary>Reliable</summary><p>Clear deadlines and regular updates on every task.</p></details>
+<details class="faq"><summary>Discreet</summary><p>Your documents and customer data are handled with care.</p></details>
+<details class="faq"><summary>Flexible</summary><p>Ongoing support or one-off projects, whichever fits.</p></details>
+</div>
+</div>
+<div class="sec"><h2>Our commitments</h2>
+<ul class="checks">
+<li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>We agree the scope of work with you in writing.</span></li>
+<li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>We keep you informed with plain, regular updates.</span></li>
+<li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>We treat your information as confidential.</span></li>
+<li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>We tell you early if something needs your attention.</span></li>
+</ul></div>
+<div class="sec"><h2>Who we help</h2>
+<div class="pills"><span>Small businesses</span><span>Start-ups</span><span>Online shops</span><span>Consultants and freelancers</span><span>Local service companies</span></div></div>
+</section>
+
+<section class="panel" id="process" role="tabpanel" aria-labelledby="t-process" hidden>
+<div class="cols">
+<div>
+<h2>How we work</h2>
+<p>A short, predictable process, so you always know what happens next.</p>
+<div class="sec" style="margin-top:28px"><h3>What we ask from you</h3>
+<ul class="checks"><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>A short description of the tasks you want to hand over.</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Access to the tools or shared folders we will use.</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>A named person who can answer our questions.</span></li></ul></div>
+<div class="sec" style="margin-top:28px"><h3>What you get</h3>
+<ul class="checks"><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>A written plan with tasks and timelines.</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Regular progress updates.</span></li><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Changes to the plan whenever your needs change.</span></li></ul></div>
+</div>
+<ol class="steps">
+<li><b>Discovery call.</b> Tell us what slows you down.</li>
+<li><b>Plan.</b> We agree tasks, tools and timelines in writing.</li>
+<li><b>Onboard.</b> We set up access and take over the first tasks.</li>
+<li><b>Deliver.</b> We carry out the work and keep you updated.</li>
+<li><b>Review.</b> We check results with you and adjust the plan.</li>
+</ol>
+</div>
+</section>
+
+<section class="panel" id="faq" role="tabpanel" aria-labelledby="t-faq" hidden>
+<h2>Frequently asked questions</h2>
+<p>Quick answers to common questions. Cannot find yours? Ask us on the Contact tab.</p>
+<button class="mini" id="toggleAll" aria-pressed="false">Expand all</button>
+<div id="faqList">
+<details class="faq"><summary>What is business support?</summary><p>It is the practical work that keeps a business running: administration, customer replies, record keeping and coordination.</p></details>
+<details class="faq"><summary>How do I get started?</summary><p>Send us a message or call +44 7456 042671. We will arrange a short discovery call to understand what you need.</p></details>
+<details class="faq"><summary>Can I hire you for one-off tasks?</summary><p>Yes. You can start with a single task or a short project and add more later.</p></details>
+<details class="faq"><summary>How is my information handled?</summary><p>We treat documents and customer details as confidential and only use them for the work you ask for.</p></details>
+<details class="faq"><summary>Which tools do you use?</summary><p>We can work with the tools you already use, such as email, shared folders and spreadsheets.</p></details>
+<details class="faq"><summary>How much does it cost?</summary><p>We agree the scope and the price in writing before any work starts. Contact us for a quote.</p></details>
+<details class="faq"><summary>How quickly will you reply?</summary><p>We aim to reply to every enquiry within one working day.</p></details>
+</div>
+</section>
+
+<section class="panel" id="contact" role="tabpanel" aria-labelledby="t-contact" hidden>
+<div class="cols">
+<div>
+<h2>Contact us</h2>
+<p>Send a message and we will reply as soon as we can.</p>
+<div class="info">
+<div class="row"><span class="ib"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></span><div><small>Phone</small><a href="tel:+447456042671">+44 7456 042671</a></div></div>
+<div class="row"><span class="ib"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></span><div><small>Email</small><a href="mailto:contact@lilcowboy.space">contact@lilcowboy.space</a></div></div>
+<div class="row"><span class="ib"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg></span><div><small>Reply time</small>Within one working day</div></div>
+</div>
+</div>
+<form id="f" novalidate>
+<div><label for="n">Your name</label><input id="n" autocomplete="name"><div class="err" id="en"></div></div>
+<div><label for="e">Your email</label><input id="e" type="email" autocomplete="email"><div class="err" id="ee"></div></div>
+<div><label for="p">Phone (optional)</label><input id="p" type="tel" autocomplete="tel"></div>
+<div><label for="s">Service</label><select id="s"><option>General enquiry</option></select></div>
+<div><label for="m">Message</label><textarea id="m" rows="4"></textarea><div class="err" id="em"></div></div>
+<button class="btn" type="submit">Send message</button>
+<div id="res" role="status"></div>
+</form>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap"><div class="foot">
+<div><div class="brand" style="margin-bottom:8px"><span class="mono" aria-hidden="true"><svg class="ico" aria-hidden="true"><use href="#i-hat"/></svg></span>Lil Cowboy LLC</div><p>Business Support Services: administration, customer support and operations.</p></div>
+<div><h3>Explore</h3><button class="lk" data-go="services">Services</button><button class="lk" data-go="about">About</button><button class="lk" data-go="process">How we work</button><button class="lk" data-go="faq">FAQ</button></div>
+<div><h3>Contact</h3><a href="tel:+447456042671">+44 7456 042671</a><a href="mailto:contact@lilcowboy.space">contact@lilcowboy.space</a></div>
+</div><div class="copy">&copy; <span id="yr"></span> Lil Cowboy LLC. All rights reserved.</div></div></footer>
+
+<script>
+(function(){
+var S=[
+["Admin and virtual assistance","Administration","Inbox, diary and task handling.",["Email and diary management","Travel and meeting arrangements","Task lists and reminders"],"admin"],
+["Document and data management","Administration","Filing, data entry and tidy records.",["Data entry and checking","Document filing and naming","Simple reports from your data"],"data"],
+["Customer support outsourcing","Customers","Friendly replies by email and chat.",["Email and chat responses","Template and FAQ writing","Escalation of complex cases"],"chat"],
+["Order and enquiry handling","Customers","Follow-ups so no customer is left waiting.",["Order status updates","Enquiry tracking","Follow-up messages"],"box"],
+["Project coordination","Operations","Plans, deadlines and progress tracking.",["Task and deadline tracking","Meeting notes and actions","Progress reports"],"chart"],
+["Business setup support","Operations","Forms, checklists and process documents.",["Checklists and templates","Form preparation","Written process guides"],"check"]];
+var $=function(s){return document.querySelector(s)},all=function(s){return [].slice.call(document.querySelectorAll(s))};
+var tabs=all('.tab'),panels=all('.panel');
+function show(id,push){tabs.forEach(function(t){var on=t.getAttribute('aria-controls')===id;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1});
+panels.forEach(function(p){p.hidden=p.id!==id});if(push!==false){try{history.replaceState(null,'','#'+id)}catch(e){}}window.scrollTo(0,0);if(id==='home')count()}
+tabs.forEach(function(t,i){t.addEventListener('click',function(){show(t.getAttribute('aria-controls'))});
+t.addEventListener('keydown',function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(k){var n=tabs[(i+k+tabs.length)%tabs.length];n.focus();n.click()}})});
+all('[data-go]').forEach(function(b){b.addEventListener('click',function(){show(b.dataset.go)})});
+function count(){all('[data-count]').forEach(function(el){var to=+el.dataset.count,v=0;el.textContent=0;var iv=setInterval(function(){v++;el.textContent=v;if(v>=to)clearInterval(iv)},to>10?35:150)})}
+function render(f){$('#grid').innerHTML=S.filter(function(s){return f==='all'||s[1]===f}).map(function(s){
+return '<article class="card"><span class="ib"><svg class="ico" aria-hidden="true"><use href="#i-'+s[4]+'"/></svg></span><span class="tag">'+s[1]+'</span><h3>'+s[0]+'</h3><p>'+s[2]+'</p><details><summary>What is included</summary><ul>'+s[3].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></details></article>'}).join('')}
+all('.chip').forEach(function(c){c.addEventListener('click',function(){all('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===c)});render(c.dataset.f)})});
+render('all');
+S.forEach(function(s){var o=document.createElement('option');o.textContent=s[0];$('#s').appendChild(o)});
+$('#f').addEventListener('submit',function(e){e.preventDefault();var n=$('#n').value.trim(),m=$('#m').value.trim(),em=$('#e').value.trim(),okE=/^\S+@\S+\.\S+$/.test(em);
+$('#en').textContent=n?'':'Enter your name.';$('#ee').textContent=okE?'':'Enter a valid email address.';$('#em').textContent=m.length>9?'':'Write at least 10 characters.';
+if(!n||!okE||m.length<10)return;
+var body='Name: '+n+'\nEmail: '+em+'\nPhone: '+($('#p').value.trim()||'not given')+'\nService: '+$('#s').value+'\n\n'+m;
+$('#res').innerHTML='<div class="ok">Your email app is opening with your message. If it does not open, write to contact@lilcowboy.space .</div>';
+location.href='mailto:contact@lilcowboy.space?subject='+encodeURIComponent('Enquiry: '+$('#s').value)+'&body='+encodeURIComponent(body)});
+$('#toggleAll').addEventListener('click',function(){var b=$('#toggleAll'),open=b.getAttribute('aria-pressed')!=='true';all('#faqList details').forEach(function(d){d.open=open});b.setAttribute('aria-pressed',open);b.textContent=open?'Collapse all':'Expand all'});
+var root=document.documentElement;$('#themeBtn').addEventListener('click',function(){var d=root.dataset.theme==='dark'||(!root.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches);root.dataset.theme=d?'light':'dark'});
+$('#yr').textContent=new Date().getFullYear();
+var h=location.hash.slice(1);show(panels.some(function(p){return p.id===h})?h:'home',false);
+})();
+</script>
+</body>
+</html>
